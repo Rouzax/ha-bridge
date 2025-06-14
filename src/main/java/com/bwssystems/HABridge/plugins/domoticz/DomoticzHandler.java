@@ -12,9 +12,9 @@ import com.google.gson.Gson;
 
 public class DomoticzHandler {
     private static final Logger log = LoggerFactory.getLogger(DomoticzHandler.class);
-    private static final String GET_REQUEST = "/json.htm?type=";
-    private static final String DEVICES_TYPE = "devices";
-    private static final String SCENES_TYPE = "scenes";
+    private static final String GET_REQUEST = "/json.htm?type=command&param=";
+    private static final String DEVICES_TYPE = "getdevices";
+    private static final String SCENES_TYPE = "getscenes";
     private static final String FILTER_USED = "&used=true";
     private NamedIP domoticzAddress;
 
